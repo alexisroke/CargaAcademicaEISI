@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.CargoActivity"
+            android:label="@string/title_activity_cargo" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.DocenteActivity"
+            android:label="@string/title_activity_docente" >
+        </activity>
     </application>
 
 </manifest>

@@ -43,9 +43,13 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_carga_academica=0x7f030000;
+        public static final int activity_cargo=0x7f030001;
+        public static final int activity_docente=0x7f030002;
     }
     public static final class menu {
         public static final int carga_academica=0x7f070000;
+        public static final int cargo=0x7f070001;
+        public static final int docente=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -60,6 +64,8 @@ public final class R {
         public static final int imagebutton_registromaterias=0x7f050004;
         public static final int textview_registro_materias=0x7f050006;
         public static final int texview_manuprincipal=0x7f050005;
+        public static final int title_activity_cargo=0x7f05000c;
+        public static final int title_activity_docente=0x7f05000d;
     }
     public static final class style {
         /** 
