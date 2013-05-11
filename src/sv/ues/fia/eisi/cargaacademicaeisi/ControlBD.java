@@ -141,11 +141,7 @@ public class ControlBD {
 	
 	
 	/**  TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 5 */
-	
-	
-	
-	
-	
+		
 	
 
 }// FIN CLASE P´RINCIPAL CONTROLBD
