@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class ControlBD {
+	// confirmacion de mario
 	// DECLARACION DE STRING con los campos de cada tabla de la BD
 	// a quien le toca cada tabala agreguele los campos necesarios entre las
 	// comillas
