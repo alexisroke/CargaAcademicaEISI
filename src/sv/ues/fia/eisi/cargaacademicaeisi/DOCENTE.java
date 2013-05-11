@@ -16,7 +16,6 @@ public class DOCENTE {
 	public DOCENTE(String iddocente, String idcontrato, String nombre,
 			String apellido, String grado_acad, String correo, int horas_asig,
 			String telefono) {
-		super();
 		this.iddocente = iddocente;
 		this.idcontrato = idcontrato;
 		this.nombre = nombre;

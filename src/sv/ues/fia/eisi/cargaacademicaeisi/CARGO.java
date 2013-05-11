@@ -8,7 +8,6 @@ public class CARGO {
 	}
 
 	public CARGO(String idcargo, String nom_cargo) {
-		super();
 		this.idcargo = idcargo;
 		this.nom_cargo = nom_cargo;
 	}
