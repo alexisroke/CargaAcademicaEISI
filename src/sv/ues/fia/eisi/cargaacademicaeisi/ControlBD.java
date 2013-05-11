@@ -135,8 +135,6 @@ public class ControlBD {
 
 	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 5 */
 
-	
-	
 	// FUNCION DE VERIFICACION DE INTEGRIDAD
 	// 1 AL 6 aLEXIS
 	// 7 AL 12 MARIO
@@ -173,6 +171,27 @@ public class ControlBD {
 		}
 
 		case 6: {
+			return true;
+		}
+		case 7: {
+			return true;
+		}
+		case 8: {
+			return true;
+		}
+		case 9: {
+			return true;
+		}
+		case 10: {
+			return true;
+		}
+		case 11: {
+			return true;
+		}
+		case 12: {
+			return true;
+		}
+		case 13: {
 			return true;
 		}
 
