@@ -1,4 +1,0 @@
-CargaAcademicaEISI
-==================
-
-carga academica
