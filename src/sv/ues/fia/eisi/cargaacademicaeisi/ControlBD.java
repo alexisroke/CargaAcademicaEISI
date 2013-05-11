@@ -36,7 +36,7 @@ public class ControlBD {
 			"" };
 
 	private static final String[] LOCALES = new String[] { "", "", "", "", "" };
-	private static final String[] MATERIA = new String[] { "CODIGOMATERIA", "NOM_MATERIA", "NUMERO_ALUMNOS"};
+	private static final String[] MATERIA = new String[] { "CODIGOMATERIA", "NOM_MATERIA"};
 	private static final String[] MAT_AREA_PUEDE_IMPARTIR = new String[] { "",
 			"", "", "", "" };
 	private static final String[] MODALIDAD_ACT_ACAD = new String[] { "", "",
@@ -89,13 +89,13 @@ public class ControlBD {
 				db.execSQL("CREATE TABLE DOCENTE_DPTO();");
 				/** ASIGNACION 4 */
 				db.execSQL("CREATE TABLE LOCALES();");
-				db.execSQL("CREATE TABLE MATERIA();");
+				db.execSQL("CREATE TABLE MATERIA (CODIGOMATERIA VARCHAR(6) NOT NULL PRIMARY KEY,NOM_MATERIA VARCHAR(20) NULL);");
 				db.execSQL("CREATE TABLE MAT_AREA_PUEDE_IMPARTIR();");
 				db.execSQL("CREATE TABLE MODALIDAD_ACT_ACAD();");
 				/** ASIGNACION 5 */
 				db.execSQL("CREATE TABLE MODALIDAD_CURSO();");
 				db.execSQL("CREATE TABLE PERIODO();");
-				db.execSQL("CREATE TABLE TIPO_CONTRATO();");
+				db.execSQL("CREATE TABLE TIPO_CONTRATO( IDCONTRATO VARCHAR(5) NOT NULL PRIMARY KEY, TIPO VARCHAR(25), HORAS INTEGER); ");
 
 			} catch (SQLException e) {
 
