@@ -7,13 +7,49 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ControlBD {
 	// DECLARACION DE STRING con los campos de cada tabla de la BD
-	// private static final String[] camposAlumno = new String[] { "carnet",
-	// "nombre", "apellido", "sexo", "matganadas" };
-	// private static final String[] camposNota = new String[] { "carnet",
-	// "codmateria", "ciclo", "notafinal" };
-	// private static final String[] camposMateria = new String[] {
-	// "codmateria",
-	// "nommateria", "unidadesval" };
+	// a quien le toca cada tabala agreguele los campos necesarios entre las
+	// comillas
+	/** ASIGNACION 1 */
+	private static final String[] ACTIVIDAD_ACADEMICA = new String[] {
+			"IDACTACAD", "IDMODALIDAD", "NOM_ACT_ACAD", "CARGO" };
+	private static final String[] AREA_MATERIA = new String[] { "", "", "", "",
+			"" };
+	private static final String[] CARGA_ACADEMICA = new String[] { "", "", "",
+			"", "" };
+	private static final String[] CARGO = new String[] { "", "", "", "", "" };
+
+	/** ASIGNACION 2 */
+	private static final String[] CICLO = new String[] { "", "", "", "", "" };
+	private static final String[] DEPARTAMENTO = new String[] { "", "", "", "",
+			"" };
+	private static final String[] DETALLE_CARGA_ACT_ACAD = new String[] { "",
+			"", "", "", "" };
+	private static final String[] DETALLE_CARGA_MAT = new String[] { "", "",
+			"", "", "" };
+
+	/** ASIGNACION 3 */
+	private static final String[] DETALLE_GRUPO_ASIGNADO = new String[] { "",
+			"", "", "", "" };
+	private static final String[] DOCENTE = new String[] { "", "", "", "", "" };
+	private static final String[] DOCENTE_CARGO = new String[] { "", "", "",
+			"", "" };
+	private static final String[] DOCENTE_DPTO = new String[] { "", "", "", "",
+			"" };
+
+	/** ASIGNACION 4 */
+	private static final String[] LOCALES = new String[] { "", "", "", "", "" };
+	private static final String[] MATERIA = new String[] { "", "", "", "", "" };
+	private static final String[] MAT_AREA_PUEDE_IMPARTIR = new String[] { "",
+			"", "", "", "" };
+	private static final String[] MODALIDAD_ACT_ACAD = new String[] { "", "",
+			"", "", "" };
+
+	/** ASIGNACION 5 */
+	private static final String[] MODALIDAD_CURSO = new String[] { "", "", "",
+			"", "" };
+	private static final String[] PERIODO = new String[] { "", "", "", "", "" };
+	private static final String[] TIPO_CONTRATO = new String[] { "", "", "",
+			"", "" };
 
 	private final Context context;
 	private DatabaseHelper DBHelper;
@@ -37,9 +73,33 @@ public class ControlBD {
 		public void onCreate(SQLiteDatabase db) {
 			try {
 				// SENTENCIAS DE CREACION DE TABLAS BD
-				// db.execSQL("CREATE TABLE alumno(carnet VARCHAR(7) NOT NULL PRIMARY KEY,nombre VARCHAR(30),apellido VARCHAR(30),sexo VARCHAR(1),matganadas INTEGER);");
-				// db.execSQL("CREATE TABLE materia(codmateria VARCHAR(6) NOT NULL PRIMARY KEY,nommateria VARCHAR(30),unidadesval VARCHAR(1));");
-				// db.execSQL("CREATE TABLE nota(carnet VARCHAR(7) NOT NULL ,codmateria VARCHAR(6) NOT NULL ,ciclo VARCHAR(5) ,notafinal REAL ,PRIMARY KEY(carnet,codmateria,ciclo));");
+				// entre parentesis agreguenle los campos de la tabla con sutipo
+				// de dato y primary key:
+
+				/** ASIGNACION 1 */
+				db.execSQL("CREATE TABLE ACTIVIDAD_ACADEMICA();");
+				db.execSQL("CREATE TABLE AREA_MATERIA();");
+				db.execSQL("CREATE TABLE CARGA_ACADEMICA();");
+				db.execSQL("CREATE TABLE CARGO();");
+				/** ASIGNACION 2 */
+				db.execSQL("CREATE TABLE CICLO();");
+				db.execSQL("CREATE TABLE DEPARTAMENTO();");
+				db.execSQL("CREATE TABLE DETALLE_CARGA_ACT_ACAD();");
+				db.execSQL("CREATE TABLE DETALLE_CARGA_MAT();");
+				/** ASIGNACION 3 */
+				db.execSQL("CREATE TABLE DETALLE_GRUPO_ASIGNADO();");
+				db.execSQL("CREATE TABLE DOCENTE();");
+				db.execSQL("CREATE TABLE DOCENTE_CARGO();");
+				db.execSQL("CREATE TABLE DOCENTE_DPTO();");
+				/** ASIGNACION 4 */
+				db.execSQL("CREATE TABLE LOCALES();");
+				db.execSQL("CREATE TABLE MATERIA();");
+				db.execSQL("CREATE TABLE MAT_AREA_PUEDE_IMPARTIR();");
+				db.execSQL("CREATE TABLE MODALIDAD_ACT_ACAD();");
+				/** ASIGNACION 5 */
+				db.execSQL("CREATE TABLE MODALIDAD_CURSO();");
+				db.execSQL("CREATE TABLE PERIODO();");
+				db.execSQL("CREATE TABLE TIPO_CONTRATO();");
 
 			} catch (SQLException e) {
 
@@ -64,8 +124,4 @@ public class ControlBD {
 		DBHelper.close();
 	}
 
-	
-	
-	
-	
-}//FIN CLASE P´RINCIPAL CONTROLBD
+}// FIN CLASE P´RINCIPAL CONTROLBD
