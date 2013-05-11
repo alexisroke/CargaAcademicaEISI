@@ -1,6 +1,7 @@
 package sv.ues.fia.eisi.cargaacademicaeisi;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -123,25 +124,68 @@ public class ControlBD {
 	public void cerrar() {
 		DBHelper.close();
 	}
-	
-/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 1 */
-	
-	
-	
-	/**  TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 2 */
-	
-	
-	
-	/**  TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 3 */
-	
-	
-	
-	/**  TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 4 */
+
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 1 */
+
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 2 */
+
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 3 */
+
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 4 */
+
+	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 5 */
+
 	
 	
-	
-	/**  TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION 5 */
-		
-	
+	// FUNCION DE VERIFICACION DE INTEGRIDAD
+	// 1 AL 6 aLEXIS
+	// 7 AL 12 MARIO
+	// 13 AÑ 18 EMERSON
+	// 19 AL 24 AGUSTIN
+	// 25 AL 31 SERGIO
+	private boolean verificarIntegridad(Object dato, int relacion)
+			throws SQLException {
+
+		switch (relacion) {
+
+		case 1: {
+
+			return true;
+		}
+
+		case 2: {
+
+			return true;
+		}
+
+		case 3: {
+
+			return true;
+
+		}
+
+		case 4: {
+			return true;
+		}
+
+		case 5: {
+			return true;
+		}
+
+		case 6: {
+			return true;
+		}
+
+		default:
+			return false;
+
+		}
+
+	}
+
+	public String llenarBDCarnet() {
+
+		return "Guardo Correctamente";
+	}
 
 }// FIN CLASE P´RINCIPAL CONTROLBD
