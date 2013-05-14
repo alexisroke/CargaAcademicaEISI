@@ -8,12 +8,13 @@
     <string name="imagebutton_registromaterias">Registro Materias</string>
     <string name="texview_manuprincipal">Menu principal</string>
     <string name="textview_registro_materias">Registro Materias</string>
-    <string name="boton1">Alexis</string>
-    <string name="boton2">Mario</string>
-    <string name="boton3">Emersson</string>
-    <string name="boton4">Agustin</string>
-    <string name="boton5">Sergio</string>
+    <string name="menu_boton1">Administracion catalogos</string>
+    <string name="menu_boton2">administracion docentes</string>
+    <string name="menu_boton3">administracion Materias</string>
+    <string name="menu_boton4">Administracion actividad Acad</string>
+    <string name="menu_boton5">Gestion Carga Acad</string>
     <string name="title_activity_cargo">CargoActivity</string>
     <string name="title_activity_docente">DocenteActivity</string>
-
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <color name="rojo">#ff0000</color>
 </resources>

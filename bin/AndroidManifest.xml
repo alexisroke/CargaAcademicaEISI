@@ -30,6 +30,10 @@
             android:name="sv.ues.fia.eisi.cargaacademicaeisi.DocenteActivity"
             android:label="@string/title_activity_docente" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.MenuPrincipalActivity"
+            android:label="@string/title_activity_menu_principal" >
+        </activity>
     </application>
 
 </manifest>

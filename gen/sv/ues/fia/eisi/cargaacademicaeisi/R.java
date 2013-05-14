@@ -10,6 +10,12 @@ package sv.ues.fia.eisi.cargaacademicaeisi;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int blanco=0x7f040001;
+        public static final int ocre2=0x7f040000;
+        public static final int rojo=0x7f040003;
+        public static final int yellow2=0x7f040002;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -17,55 +23,64 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        public static final int nose2=0x7f050002;
     }
     public static final class drawable {
-        public static final int carga_academica=0x7f020000;
-        public static final int degradadobackground=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int registro_materias=0x7f020003;
+        public static final int act_academicas=0x7f020000;
+        public static final int carga_academica=0x7f020001;
+        public static final int catalogo=0x7f020002;
+        public static final int degradadobackground=0x7f020003;
+        public static final int docente=0x7f020004;
+        public static final int eisi=0x7f020005;
+        public static final int entrar=0x7f020006;
+        public static final int gest_carga_academica=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int materias=0x7f020009;
+        public static final int registro_materias=0x7f02000a;
+        public static final int shape_creditos=0x7f02000b;
+        public static final int ues=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000c;
-        public static final int imageButton1=0x7f080002;
-        public static final int imageButton2=0x7f080001;
-        public static final int imageButton3=0x7f080004;
-        public static final int imageButton4=0x7f080005;
-        public static final int imageButton5=0x7f08000a;
-        public static final int textView1=0x7f080000;
-        public static final int textView2=0x7f080003;
-        public static final int textView3=0x7f080006;
-        public static final int textView4=0x7f080007;
-        public static final int textView5=0x7f080008;
-        public static final int textView6=0x7f080009;
-        public static final int textView7=0x7f08000b;
+        public static final int Button1=0x7f090002;
+        public static final int action_settings=0x7f090008;
+        public static final int imageButton1=0x7f090003;
+        public static final int imageButton2=0x7f090004;
+        public static final int imageButton3=0x7f090005;
+        public static final int imageButton4=0x7f090006;
+        public static final int imageButton5=0x7f090007;
+        public static final int imageView1=0x7f090000;
+        public static final int imageView2=0x7f090001;
     }
     public static final class layout {
         public static final int activity_carga_academica=0x7f030000;
         public static final int activity_cargo=0x7f030001;
         public static final int activity_docente=0x7f030002;
+        public static final int activity_menu_principal=0x7f030003;
     }
     public static final class menu {
-        public static final int carga_academica=0x7f070000;
-        public static final int cargo=0x7f070001;
-        public static final int docente=0x7f070002;
+        public static final int carga_academica=0x7f080000;
+        public static final int cargo=0x7f080001;
+        public static final int docente=0x7f080002;
+        public static final int menu_principal=0x7f080003;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int boton1=0x7f050007;
-        public static final int boton2=0x7f050008;
-        public static final int boton3=0x7f050009;
-        public static final int boton4=0x7f05000a;
-        public static final int boton5=0x7f05000b;
-        public static final int hello_world=0x7f050002;
-        public static final int imagebutton_cargaacademica=0x7f050003;
-        public static final int imagebutton_registromaterias=0x7f050004;
-        public static final int textview_registro_materias=0x7f050006;
-        public static final int texview_manuprincipal=0x7f050005;
-        public static final int title_activity_cargo=0x7f05000c;
-        public static final int title_activity_docente=0x7f05000d;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060002;
+        public static final int imagebutton_cargaacademica=0x7f060003;
+        public static final int imagebutton_registromaterias=0x7f060004;
+        public static final int menu_boton1=0x7f060007;
+        public static final int menu_boton2=0x7f060008;
+        public static final int menu_boton3=0x7f060009;
+        public static final int menu_boton4=0x7f06000a;
+        public static final int menu_boton5=0x7f06000b;
+        public static final int textview_registro_materias=0x7f060006;
+        public static final int texview_manuprincipal=0x7f060005;
+        public static final int title_activity_cargo=0x7f06000c;
+        public static final int title_activity_docente=0x7f06000d;
+        public static final int title_activity_menu_principal=0x7f06000e;
     }
     public static final class style {
         /** 
@@ -89,10 +104,29 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        /**  
+      <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:shadowColor">@color/ocre2</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textColor">@color/ocre2</item>
+        <item name="android:textColorHint">@color/ocre2</item>
+        <item name="android:textColorLink">@color/ocre2</item>
+        <item name="android:textSize">@dimen/nose2</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:typeface">serif</item>
+       
+         */
+        public static final int st_main_button=0x7f070002;
     }
 }
