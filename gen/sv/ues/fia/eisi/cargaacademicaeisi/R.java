@@ -109,24 +109,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
-        /**  
-      <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginBottom">50dp</item>
-        <item name="android:shadowColor">@color/ocre2</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
-        <item name="android:shadowRadius">3</item>
-        <item name="android:textColor">@color/ocre2</item>
-        <item name="android:textColorHint">@color/ocre2</item>
-        <item name="android:textColorLink">@color/ocre2</item>
-        <item name="android:textSize">@dimen/nose2</item>
-        <item name="android:textStyle">bold|italic</item>
-        <item name="android:typeface">serif</item>
-       
-         */
         public static final int st_main_button=0x7f070002;
     }
 }
