@@ -14,8 +14,6 @@ public class ControlBD {
 	// comillas
 	private static final String[] ACTIVIDAD_ACADEMICA = new String[] { "", "",
 			"", "" };
-	private static final String[] AREA_MATERIA = new String[] { "", "", "", "",
-			"" };
 
 	/** ASIGNACIONM ALEXIS */
 	private static final String[] CARGA_ACADEMICA = new String[] { "iddocente",
@@ -29,10 +27,18 @@ public class ControlBD {
 	/** FIN */
 
 	private static final String[] CARGO = new String[] { "", "", "", "", "" };
-	private static final String[] DEPARTAMENTO = new String[] { "", "", "", "",
-			"" };
-	private static final String[] DETALLE_GRUPO_ASIGNADO = new String[] { "",
-			"", "", "", "" };
+
+	/** Mario start */
+	private static final String[] camposDepto = new String[] {
+			"IDDEPARTAMENTO", "NOM_DEPTO" };
+	private static final String[] camposMat = new String[] { "CODIGOMATERIA",
+			"NOM_MATERIA" };
+	private static final String[] camposAreaMat = new String[] { "IDAREAMAT",
+			"IDDEPARTAMENTO", "CODIGOMATERIA" };
+	private static final String[] camposDetGpoAsig = new String[] {
+			"IDDETALLECURSO", "CODIGOMATERIA", "IDMODALIDAD", "IDLOCAL" };
+	/** Mario end */
+
 	private static final String[] DOCENTE = new String[] { "", "", "", "", "" };
 	private static final String[] DOCENTE_CARGO = new String[] { "", "", "",
 			"", "" };
@@ -40,7 +46,7 @@ public class ControlBD {
 			"" };
 
 	private static final String[] LOCALES = new String[] { "", "", "", "", "" };
-	private static final String[] MATERIA = new String[] { "", "" };
+
 	private static final String[] MAT_AREA_PUEDE_IMPARTIR = new String[] { "",
 			"", "", "", "" };
 	private static final String[] MODALIDAD_ACT_ACAD = new String[] { "", "",
@@ -211,6 +217,71 @@ public class ControlBD {
 			regInsertados += contador;
 		}
 		return regInsertados;
+	}
+
+	public DEPARTAMENTO consultarDepto(String idepto) {
+		String[] id = { idepto };
+		Cursor cursor = db.query("DEPARTAMENTO", camposDepto,
+				"IDDEPARTAMENTO = ?", id, null, null, null);
+		if (cursor.moveToFirst()) {
+			DEPARTAMENTO departamento = new DEPARTAMENTO();
+			departamento.setIddepartamento(cursor.getString(0));
+			departamento.setNom_depto(cursor.getString(1));
+			return departamento;
+		} else {
+			return null;
+		}
+	}
+
+	public MATERIA consultarMate(String codmat) {
+		String[] id = { codmat };
+		Cursor cursor = db.query("MATERIA", camposMat, "CODIGOMATERIA = ?", id,
+				null, null, null);
+		if (cursor.moveToFirst()) {
+			MATERIA materia = new MATERIA();
+			materia.setCodigomateria(cursor.getString(0));
+			materia.setNom_materia(cursor.getString(1));
+			return materia;
+		} else {
+			return null;
+		}
+	}
+
+	public AREA_MATERIA consultarAreaMat(String idaremat, String idepto,
+			String codmate) {
+		String[] id = { idaremat, idepto, codmate };
+		Cursor cursor = db.query("AREA_MATERIA", camposAreaMat,
+				"IDAREAMAT = ? AND IDDEPARTAMENTO = ? AND CODIGOMATERIA = ?",
+				id, null, null, null);
+		if (cursor.moveToFirst()) {
+			AREA_MATERIA area = new AREA_MATERIA();
+			area.setIdareamat(cursor.getString(0));
+			area.setIddepartamento(cursor.getString(1));
+			area.setCodigomateria(cursor.getString(2));
+			return area;
+		} else {
+			return null;
+		}
+	}
+
+	public DETALLE_GRUPO_ASIGNADO consultarDetGpoAsig(String idetcurso,
+			String codmate, String idmod, String idlocal) {
+		String[] id = { idetcurso, codmate, idmod, idlocal };
+		Cursor cursor = db
+				.query("DETALLE_GRUPO_ASIGNADO",
+						camposDetGpoAsig,
+						"IDDETALLECURSO = ? AND CODIGOMATERIA = ? AND IDMODALIDAD = ? AND IDLOCAL = ?",
+						id, null, null, null);
+		if (cursor.moveToFirst()) {
+			DETALLE_GRUPO_ASIGNADO asignado = new DETALLE_GRUPO_ASIGNADO();
+			asignado.setIddetallecurso(cursor.getString(0));
+			asignado.setCodigomateria(cursor.getString(1));
+			asignado.setIdmodalidad(cursor.getString(2));
+			asignado.setIdlocal(cursor.getString(3));
+			return asignado;
+		} else {
+			return null;
+		}
 	}
 
 	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION emerson */
