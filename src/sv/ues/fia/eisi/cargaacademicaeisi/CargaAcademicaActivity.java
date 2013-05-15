@@ -24,11 +24,9 @@ public class CargaAcademicaActivity extends Activity {
 		boton1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				boton1.setBackgroundColor(Color.GREEN);
-				
 				Intent menu = new Intent(getApplicationContext(),
 						MenuPrincipalActivity.class);
-				startActivity(menu);	
+				startActivity(menu);
 			}
 		});
 

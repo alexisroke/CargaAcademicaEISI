@@ -16,7 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="Departamentos" />
+        android:text="Departamentos"
+        android:background="@drawable/button_custom" />
 
     <Button
         android:id="@+id/button2"
@@ -25,6 +26,7 @@
         android:layout_below="@+id/btnDepartamentos"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
-        android:text="Materias" />
+        android:text="Materias"
+        android:background="@drawable/button_custom" />
 
 </RelativeLayout>
