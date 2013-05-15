@@ -60,9 +60,9 @@ public class MenuPrincipalActivity extends Activity {
 	boton_cargaacad.setOnClickListener(new OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
-			Intent menu1 = new Intent(getApplicationContext(),
-					MenuPrincipalActivity.class);
-			startActivity(menu1);
+			Intent menu5 = new Intent(getApplicationContext(),
+					MenuGestionCargaAcademicaActivity.class);
+			startActivity(menu5);
 		}
 	});
 		

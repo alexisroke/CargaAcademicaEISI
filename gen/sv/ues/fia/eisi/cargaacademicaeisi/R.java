@@ -8,13 +8,17 @@
 package sv.ues.fia.eisi.cargaacademicaeisi;
 
 public final class R {
+    public static final class array {
+        public static final int anios_ciclo=0x7f040000;
+        public static final int ciclos=0x7f040001;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int blanco=0x7f040001;
-        public static final int ocre2=0x7f040000;
-        public static final int rojo=0x7f040003;
-        public static final int yellow2=0x7f040002;
+        public static final int blanco=0x7f050001;
+        public static final int ocre2=0x7f050000;
+        public static final int rojo=0x7f050003;
+        public static final int yellow2=0x7f050002;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -23,9 +27,9 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
-        public static final int nose2=0x7f050002;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int nose2=0x7f060002;
     }
     public static final class drawable {
         public static final int act_academicas=0x7f020000;
@@ -43,56 +47,75 @@ public final class R {
         public static final int ues=0x7f02000c;
     }
     public static final class id {
-        public static final int Button1=0x7f090002;
-        public static final int action_settings=0x7f09000c;
-        public static final int button1=0x7f090005;
-        public static final int button2=0x7f090004;
-        public static final int button3=0x7f090003;
-        public static final int button4=0x7f090006;
-        public static final int imageButton1=0x7f090007;
-        public static final int imageButton2=0x7f090008;
-        public static final int imageButton3=0x7f090009;
-        public static final int imageButton4=0x7f09000a;
-        public static final int imageButton5=0x7f09000b;
-        public static final int imageView1=0x7f090000;
-        public static final int imageView2=0x7f090001;
+        public static final int Button1=0x7f0a0002;
+        public static final int action_settings=0x7f0a0011;
+        public static final int button1_ciclo_insertar=0x7f0a000a;
+        public static final int button2_ciclo_eliminar=0x7f0a0008;
+        public static final int button3_ciclo_actualizar=0x7f0a0007;
+        public static final int button4_ciclo_consultar=0x7f0a0009;
+        public static final int button4_tabla_det_carga_actacad=0x7f0a000b;
+        public static final int imageButton1=0x7f0a000c;
+        public static final int imageButton2=0x7f0a000d;
+        public static final int imageButton3=0x7f0a000e;
+        public static final int imageButton4=0x7f0a000f;
+        public static final int imageButton5=0x7f0a0010;
+        public static final int imageView1=0x7f0a0000;
+        public static final int imageView2=0x7f0a0001;
+        public static final int spinner_anio_ciclo=0x7f0a0004;
+        public static final int spinner_ciclo=0x7f0a0006;
+        public static final int textView1=0x7f0a0003;
+        public static final int textView2=0x7f0a0005;
     }
     public static final class layout {
         public static final int activity_carga_academica=0x7f030000;
         public static final int activity_cargo=0x7f030001;
-        public static final int activity_docente=0x7f030002;
-        public static final int activity_menu_ciclo=0x7f030003;
-        public static final int activity_menu_principal=0x7f030004;
+        public static final int activity_ciclo_insertar=0x7f030002;
+        public static final int activity_docente=0x7f030003;
+        public static final int activity_menu_ciclo=0x7f030004;
+        public static final int activity_menu_gestion_carga_academica=0x7f030005;
+        public static final int activity_menu_principal=0x7f030006;
     }
     public static final class menu {
-        public static final int carga_academica=0x7f080000;
-        public static final int cargo=0x7f080001;
-        public static final int docente=0x7f080002;
-        public static final int menu_ciclo=0x7f080003;
-        public static final int menu_principal=0x7f080004;
+        public static final int carga_academica=0x7f090000;
+        public static final int cargo=0x7f090001;
+        public static final int ciclo_insertar=0x7f090002;
+        public static final int docente=0x7f090003;
+        public static final int menu_ciclo=0x7f090004;
+        public static final int menu_gestion_carga_academica=0x7f090005;
+        public static final int menu_principal=0x7f090006;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int boton_menu_ciclo_actualizar=0x7f060012;
-        public static final int boton_menu_ciclo_consultar=0x7f060013;
-        public static final int boton_menu_ciclo_eliminar=0x7f060011;
-        public static final int boton_menu_ciclo_insertar=0x7f060010;
-        public static final int hello_world=0x7f060002;
-        public static final int imagebutton_cargaacademica=0x7f060003;
-        public static final int imagebutton_registromaterias=0x7f060004;
-        public static final int menu_boton1=0x7f060007;
-        public static final int menu_boton2=0x7f060008;
-        public static final int menu_boton3=0x7f060009;
-        public static final int menu_boton4=0x7f06000a;
-        public static final int menu_boton5=0x7f06000b;
-        public static final int textview_registro_materias=0x7f060006;
-        public static final int texview_manuprincipal=0x7f060005;
-        public static final int title_activity_cargo=0x7f06000c;
-        public static final int title_activity_docente=0x7f06000d;
-        public static final int title_activity_menu_ciclo=0x7f06000f;
-        public static final int title_activity_menu_main=0x7f060014;
-        public static final int title_activity_menu_principal=0x7f06000e;
+        public static final int Menu_GestionCargaAcad_boton1_Ciclo=0x7f070016;
+        public static final int Menu_GestionCargaAcad_boton2_CargaAcad=0x7f070017;
+        public static final int Menu_GestionCargaAcad_boton3_DetalleMat=0x7f070018;
+        public static final int Menu_GestionCargaAcad_boton4_DetalleActAcad=0x7f070019;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int boton_menu_ciclo_actualizar=0x7f070012;
+        public static final int boton_menu_ciclo_consultar=0x7f070013;
+        public static final int boton_menu_ciclo_eliminar=0x7f070011;
+        public static final int boton_menu_ciclo_insertar=0x7f070010;
+        public static final int combobox_anio=0x7f07001b;
+        public static final int combobox_ciclo=0x7f07001d;
+        public static final int hello_world=0x7f070002;
+        public static final int imagebutton_cargaacademica=0x7f070003;
+        public static final int imagebutton_registromaterias=0x7f070004;
+        public static final int menu_boton1=0x7f070007;
+        public static final int menu_boton2=0x7f070008;
+        public static final int menu_boton3=0x7f070009;
+        public static final int menu_boton4=0x7f07000a;
+        public static final int menu_boton5=0x7f07000b;
+        public static final int textview_registro_materias=0x7f070006;
+        public static final int textview_selecione_ciclo=0x7f07001e;
+        public static final int textview_selecioneanio_ciclo=0x7f07001c;
+        public static final int texview_manuprincipal=0x7f070005;
+        public static final int title_activity_cargo=0x7f07000c;
+        public static final int title_activity_ciclo_insertar=0x7f07001a;
+        public static final int title_activity_docente=0x7f07000d;
+        public static final int title_activity_menu_ciclo=0x7f07000f;
+        public static final int title_activity_menu_gestion_carga_academica=0x7f070015;
+        public static final int title_activity_menu_main=0x7f070014;
+        public static final int title_activity_menu_principal=0x7f07000e;
     }
     public static final class style {
         /** 
@@ -116,11 +139,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
-        public static final int st_main_button=0x7f070002;
+        public static final int AppTheme=0x7f080001;
+        public static final int st_main_button=0x7f080002;
     }
 }

@@ -19,11 +19,21 @@
 
     <color name="rojo">#ff0000</color>
 
-    <string name="title_activity_menu_ciclo">MenuCicloActivity</string>
+    <string name="title_activity_menu_ciclo">Gestion Tabla Ciclo</string>
     <string name="boton_menu_ciclo_insertar">Insertar Registro</string>
     <string name="boton_menu_ciclo_eliminar">Eliminar Registro</string>
     <string name="boton_menu_ciclo_actualizar">Actualizar Registro</string>
     <string name="boton_menu_ciclo_consultar">Consultar Registro</string>
     <string name="title_activity_menu_main">MenuMainActivity</string>
+    <string name="title_activity_menu_gestion_carga_academica">Gestion de Carga Academica</string>
+    <string name="Menu_GestionCargaAcad_boton1_Ciclo">Tabla Ciclo</string>
+    <string name="Menu_GestionCargaAcad_boton2_CargaAcad">Tabla Carga_Academica</string>
+    <string name="Menu_GestionCargaAcad_boton3_DetalleMat">Tabla Detalle_Carga_Materia</string>
+    <string name="Menu_GestionCargaAcad_boton4_DetalleActAcad">Tabla Detalle_Carga_Actividades_Academicas</string>
+    <string name="title_activity_ciclo_insertar">Ingresar Resgistros Tabla Ciclo</string>
+     <string name="combobox_anio">Selecione Año del Ciclo</string>
+     <string name="textview_selecioneanio_ciclo">Selecione el año</string>
+     <string name="combobox_ciclo">Selecione el Ciclo</string>
+     <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
 
 </resources>

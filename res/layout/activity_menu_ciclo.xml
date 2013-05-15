@@ -9,39 +9,39 @@
     tools:context=".MenuCicloActivity" >
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button3_ciclo_actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2_ciclo_eliminar"
+        android:layout_below="@+id/button2_ciclo_eliminar"
         android:layout_marginTop="38dp"
         android:text="@string/boton_menu_ciclo_actualizar" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button4_ciclo_consultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="62dp"
-        android:text="@string/boton_menu_ciclo_insertar" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="28dp"
-        android:text="@string/boton_menu_ciclo_eliminar" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
+        android:layout_below="@+id/button3_ciclo_actualizar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:text="@string/boton_menu_ciclo_consultar" />
+
+    <Button
+        android:id="@+id/button1_ciclo_insertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button4_ciclo_consultar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:text="@string/boton_menu_ciclo_insertar" />
+
+    <Button
+        android:id="@+id/button2_ciclo_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1_ciclo_insertar"
+        android:layout_below="@+id/button1_ciclo_insertar"
+        android:layout_marginTop="29dp"
+        android:text="@string/boton_menu_ciclo_eliminar" />
 
 </RelativeLayout>

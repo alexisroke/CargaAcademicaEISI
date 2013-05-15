@@ -1,5 +1,6 @@
 package sv.ues.fia.eisi.cargaacademicaeisi;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -121,7 +122,25 @@ public class ControlBD {
 	}
 
 	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION alexis */
-	
+	public String insertar(CICLO ciclo){
+		String regInsertados = "Registro Insertado Nº= ";
+		long contador = 0;
+
+		ContentValues cicl = new ContentValues();
+		cicl.put("anio", ciclo.getAnio());
+		cicl.put("numero", ciclo.getNumero());
+		cicl.put("fechaini", ciclo.getFechaini() );
+		cicl.put("fechafin", ciclo.getFechafin());
+		contador = db.insert("ciclo", null, cicl);
+
+		if (contador == -1 || contador == 0) {
+			regInsertados = "Error al Insertar el registro, Registro Duplicado. Verificar inserción";
+		} else {
+			regInsertados = regInsertados + contador;
+		}
+		return regInsertados;
+		}
+
 	
 	
 	

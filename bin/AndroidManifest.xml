@@ -42,6 +42,14 @@
             android:name="sv.ues.fia.eisi.cargaacademicaeisi.MenuMainActivity"
             android:label="@string/title_activity_menu_main" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.MenuGestionCargaAcademicaActivity"
+            android:label="@string/title_activity_menu_gestion_carga_academica" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.CicloInsertarActivity"
+            android:label="@string/title_activity_ciclo_insertar" >
+        </activity>
     </application>
 
 </manifest>
