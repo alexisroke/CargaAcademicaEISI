@@ -14,6 +14,8 @@ public class MenuGestionCargaAcademicaActivity extends Activity {
 	private Button boton_carga_acad = null;
 	private Button boton_det_carga_mat = null;
 	private Button boton_det_carga_actacad = null;
+	
+	private Button btnNuevoDepto=null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class MenuGestionCargaAcademicaActivity extends Activity {
 		boton_carga_acad = (Button) findViewById(R.id.button2_ciclo_eliminar);
 		boton_det_carga_mat = (Button) findViewById(R.id.button3_ciclo_actualizar);
 		boton_det_carga_actacad = (Button) findViewById(R.id.button4_tabla_det_carga_actacad);
+		
+		btnNuevoDepto=(Button)findViewById(R.id.btnNuevoDepto);
 
 		boton_ciclo.setOnClickListener(new OnClickListener() {
 			@Override
@@ -56,6 +60,7 @@ public class MenuGestionCargaAcademicaActivity extends Activity {
 				// startActivity(menu1);
 			}
 		});
+		
 
 	}// fin metodo oncreate
 

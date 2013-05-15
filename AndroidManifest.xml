@@ -50,10 +50,7 @@
             android:name="sv.ues.fia.eisi.cargaacademicaeisi.CicloInsertarActivity"
             android:label="@string/title_activity_ciclo_insertar" >
         </activity>
-        <activity
-            android:name="sv.ues.fia.eisi.cargaacademicaeisi.DepartamentoActivity"
-            android:label="@string/title_activity_departamento" >
-        </activity>
+        
         <activity
             android:name="sv.ues.fia.eisi.cargaacademicaeisi.AreaMateriaActivity"
             android:label="@string/title_activity_area_materia" >
@@ -65,6 +62,18 @@
         <activity
             android:name="sv.ues.fia.eisi.cargaacademicaeisi.DetalleGrupoAsignadoActivity"
             android:label="@string/title_activity_detalle_grupo_asignado" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.AdministracionCatalogosActivity"
+            android:label="@string/title_activity_administracion_catalogos" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.AdmonDeptoActivity"
+            android:label="@string/title_activity_admon_depto" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.InsertarDeptoActivity"
+            android:label="@string/title_activity_insertar_depto" >
         </activity>
     </application>
 

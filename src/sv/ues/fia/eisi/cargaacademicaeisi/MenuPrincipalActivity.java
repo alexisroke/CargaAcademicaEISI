@@ -27,9 +27,9 @@ public class MenuPrincipalActivity extends Activity {
 	boton_catalogos.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent menu1 = new Intent(getApplicationContext(),
-						MenuPrincipalActivity.class);
-				startActivity(menu1);
+				Intent cats = new Intent(getApplicationContext(),
+						AdministracionCatalogosActivity.class);
+				startActivity(cats);
 			}
 		});
 		

@@ -40,4 +40,15 @@
     <string name="title_activity_materia">MateriaActivity</string>
     <string name="title_activity_detalle_grupo_asignado">DetalleGrupoAsignadoActivity</string>
 
+    <!-- Mario -->
+    <string name="msgidDepto">Codigo del Departamento</string>
+    <string name="msgNomDepto">Nombre del Departamento</string>
+    <string name="tituloDepto">Nuevo Departamento</string>
+    <string name="btnGuardarDepto">Guardar Departamento</string>
+    <string name="btnLimpiaDepto">Limpiar Campos</string>
+    <string name="nuevoDepto">Nuevo Departamento</string>
+    <string name="title_activity_administracion_catalogos">AdministracionCatalogosActivity</string>
+    <string name="title_activity_admon_depto">AdmonDeptoActivity</string>
+    <string name="title_activity_insertar_depto">InsertarDeptoActivity</string>
+
 </resources>

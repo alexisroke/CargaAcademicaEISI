@@ -12,34 +12,37 @@
         android:id="@+id/button1_ciclo_insertar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
         android:text="@string/Menu_GestionCargaAcad_boton1_Ciclo" />
 
     <Button
         android:id="@+id/button2_ciclo_eliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1_ciclo_insertar"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/button1_ciclo_insertar"
-        android:layout_marginTop="17dp"
+        android:layout_marginLeft="18dp"
         android:text="@string/Menu_GestionCargaAcad_boton2_CargaAcad" />
 
     <Button
         android:id="@+id/button3_ciclo_actualizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2_ciclo_eliminar"
-        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2_ciclo_eliminar"
+        android:layout_marginLeft="18dp"
         android:text="@string/Menu_GestionCargaAcad_boton3_DetalleMat" />
 
     <Button
         android:id="@+id/button4_tabla_det_carga_actacad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3_ciclo_actualizar"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/button3_ciclo_actualizar"
-        android:layout_marginTop="23dp"
+        android:layout_marginLeft="18dp"
         android:text="@string/Menu_GestionCargaAcad_boton4_DetalleActAcad" />
 
 </RelativeLayout>

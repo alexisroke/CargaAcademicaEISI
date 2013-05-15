@@ -16,8 +16,9 @@ public final class R {
     }
     public static final class color {
         public static final int blanco=0x7f050001;
+        public static final int gris1=0x7f050003;
         public static final int ocre2=0x7f050000;
-        public static final int rojo=0x7f050003;
+        public static final int rojo=0x7f050004;
         public static final int yellow2=0x7f050002;
     }
     public static final class dimen {
@@ -35,62 +36,75 @@ public final class R {
         public static final int act_academicas=0x7f020000;
         public static final int carga_academica=0x7f020001;
         public static final int catalogo=0x7f020002;
-        public static final int degradadobackground=0x7f020003;
-        public static final int docente=0x7f020004;
-        public static final int eisi=0x7f020005;
-        public static final int entrar=0x7f020006;
-        public static final int gest_carga_academica=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int materias=0x7f020009;
-        public static final int registro_materias=0x7f02000a;
-        public static final int shape_creditos=0x7f02000b;
-        public static final int ues=0x7f02000c;
+        public static final int clear=0x7f020003;
+        public static final int degradadobackground=0x7f020004;
+        public static final int docente=0x7f020005;
+        public static final int eisi=0x7f020006;
+        public static final int entrar=0x7f020007;
+        public static final int gest_carga_academica=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int materias=0x7f02000a;
+        public static final int registro_materias=0x7f02000b;
+        public static final int save=0x7f02000c;
+        public static final int shape_creditos=0x7f02000d;
+        public static final int ues=0x7f02000e;
     }
     public static final class id {
-        public static final int Button1=0x7f0a0002;
-        public static final int action_settings=0x7f0a0011;
-        public static final int button1_ciclo_insertar=0x7f0a000a;
-        public static final int button2_ciclo_eliminar=0x7f0a0008;
-        public static final int button3_ciclo_actualizar=0x7f0a0007;
-        public static final int button4_ciclo_consultar=0x7f0a0009;
-        public static final int button4_tabla_det_carga_actacad=0x7f0a000b;
-        public static final int imageButton1=0x7f0a000c;
-        public static final int imageButton2=0x7f0a000d;
-        public static final int imageButton3=0x7f0a000e;
-        public static final int imageButton4=0x7f0a000f;
-        public static final int imageButton5=0x7f0a0010;
-        public static final int imageView1=0x7f0a0000;
-        public static final int imageView2=0x7f0a0001;
-        public static final int spinner_anio_ciclo=0x7f0a0004;
-        public static final int spinner_ciclo=0x7f0a0006;
-        public static final int textView1=0x7f0a0003;
-        public static final int textView2=0x7f0a0005;
+        public static final int Button1=0x7f0a0005;
+        public static final int RelativeLayout1=0x7f0a000a;
+        public static final int action_settings=0x7f0a0018;
+        public static final int btnDepartamentos=0x7f0a0000;
+        public static final int btnNuevoDepto=0x7f0a0002;
+        public static final int button1=0x7f0a000d;
+        public static final int button1_ciclo_insertar=0x7f0a0011;
+        public static final int button2=0x7f0a0001;
+        public static final int button2_ciclo_eliminar=0x7f0a000f;
+        public static final int button3_ciclo_actualizar=0x7f0a000e;
+        public static final int button4_ciclo_consultar=0x7f0a0010;
+        public static final int button4_tabla_det_carga_actacad=0x7f0a0012;
+        public static final int idDepto=0x7f0a000b;
+        public static final int imageButton1=0x7f0a0013;
+        public static final int imageButton2=0x7f0a0014;
+        public static final int imageButton3=0x7f0a0015;
+        public static final int imageButton4=0x7f0a0016;
+        public static final int imageButton5=0x7f0a0017;
+        public static final int imageView1=0x7f0a0003;
+        public static final int imageView2=0x7f0a0004;
+        public static final int nomDepto=0x7f0a000c;
+        public static final int spinner_anio_ciclo=0x7f0a0007;
+        public static final int spinner_ciclo=0x7f0a0009;
+        public static final int textView1=0x7f0a0006;
+        public static final int textView2=0x7f0a0008;
     }
     public static final class layout {
-        public static final int activity_area_materia=0x7f030000;
-        public static final int activity_carga_academica=0x7f030001;
-        public static final int activity_cargo=0x7f030002;
-        public static final int activity_ciclo_insertar=0x7f030003;
-        public static final int activity_departamento=0x7f030004;
-        public static final int activity_detalle_grupo_asignado=0x7f030005;
-        public static final int activity_docente=0x7f030006;
-        public static final int activity_materia=0x7f030007;
-        public static final int activity_menu_ciclo=0x7f030008;
-        public static final int activity_menu_gestion_carga_academica=0x7f030009;
-        public static final int activity_menu_principal=0x7f03000a;
+        public static final int activity_administracion_catalogos=0x7f030000;
+        public static final int activity_admon_depto=0x7f030001;
+        public static final int activity_area_materia=0x7f030002;
+        public static final int activity_carga_academica=0x7f030003;
+        public static final int activity_cargo=0x7f030004;
+        public static final int activity_ciclo_insertar=0x7f030005;
+        public static final int activity_detalle_grupo_asignado=0x7f030006;
+        public static final int activity_docente=0x7f030007;
+        public static final int activity_insertar_depto=0x7f030008;
+        public static final int activity_materia=0x7f030009;
+        public static final int activity_menu_ciclo=0x7f03000a;
+        public static final int activity_menu_gestion_carga_academica=0x7f03000b;
+        public static final int activity_menu_principal=0x7f03000c;
     }
     public static final class menu {
-        public static final int area_materia=0x7f090000;
-        public static final int carga_academica=0x7f090001;
-        public static final int cargo=0x7f090002;
-        public static final int ciclo_insertar=0x7f090003;
-        public static final int departamento=0x7f090004;
-        public static final int detalle_grupo_asignado=0x7f090005;
-        public static final int docente=0x7f090006;
-        public static final int materia=0x7f090007;
-        public static final int menu_ciclo=0x7f090008;
-        public static final int menu_gestion_carga_academica=0x7f090009;
-        public static final int menu_principal=0x7f09000a;
+        public static final int administracion_catalogos=0x7f090000;
+        public static final int admon_depto=0x7f090001;
+        public static final int area_materia=0x7f090002;
+        public static final int carga_academica=0x7f090003;
+        public static final int cargo=0x7f090004;
+        public static final int ciclo_insertar=0x7f090005;
+        public static final int detalle_grupo_asignado=0x7f090006;
+        public static final int docente=0x7f090007;
+        public static final int insertar_depto=0x7f090008;
+        public static final int materia=0x7f090009;
+        public static final int menu_ciclo=0x7f09000a;
+        public static final int menu_gestion_carga_academica=0x7f09000b;
+        public static final int menu_principal=0x7f09000c;
     }
     public static final class string {
         public static final int Menu_GestionCargaAcad_boton1_Ciclo=0x7f070016;
@@ -103,6 +117,8 @@ public final class R {
         public static final int boton_menu_ciclo_consultar=0x7f070013;
         public static final int boton_menu_ciclo_eliminar=0x7f070011;
         public static final int boton_menu_ciclo_insertar=0x7f070010;
+        public static final int btnGuardarDepto=0x7f070026;
+        public static final int btnLimpiaDepto=0x7f070027;
         public static final int combobox_anio=0x7f07001b;
         public static final int combobox_ciclo=0x7f07001d;
         public static final int hello_world=0x7f070002;
@@ -113,21 +129,30 @@ public final class R {
         public static final int menu_boton3=0x7f070009;
         public static final int menu_boton4=0x7f07000a;
         public static final int menu_boton5=0x7f07000b;
+        public static final int msgNomDepto=0x7f070024;
+        /**  Mario 
+         */
+        public static final int msgidDepto=0x7f070023;
+        public static final int nuevoDepto=0x7f070028;
         public static final int textview_registro_materias=0x7f070006;
         public static final int textview_selecione_ciclo=0x7f07001e;
         public static final int textview_selecioneanio_ciclo=0x7f07001c;
         public static final int texview_manuprincipal=0x7f070005;
+        public static final int title_activity_administracion_catalogos=0x7f070029;
+        public static final int title_activity_admon_depto=0x7f07002a;
         public static final int title_activity_area_materia=0x7f070020;
         public static final int title_activity_cargo=0x7f07000c;
         public static final int title_activity_ciclo_insertar=0x7f07001a;
         public static final int title_activity_departamento=0x7f07001f;
         public static final int title_activity_detalle_grupo_asignado=0x7f070022;
         public static final int title_activity_docente=0x7f07000d;
+        public static final int title_activity_insertar_depto=0x7f07002b;
         public static final int title_activity_materia=0x7f070021;
         public static final int title_activity_menu_ciclo=0x7f07000f;
         public static final int title_activity_menu_gestion_carga_academica=0x7f070015;
         public static final int title_activity_menu_main=0x7f070014;
         public static final int title_activity_menu_principal=0x7f07000e;
+        public static final int tituloDepto=0x7f070025;
     }
     public static final class style {
         /** 
