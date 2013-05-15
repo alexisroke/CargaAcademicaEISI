@@ -16,5 +16,14 @@
     <string name="title_activity_cargo">CargoActivity</string>
     <string name="title_activity_docente">DocenteActivity</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+
     <color name="rojo">#ff0000</color>
+
+    <string name="title_activity_menu_ciclo">MenuCicloActivity</string>
+    <string name="boton_menu_ciclo_insertar">Insertar Registro</string>
+    <string name="boton_menu_ciclo_eliminar">Eliminar Registro</string>
+    <string name="boton_menu_ciclo_actualizar">Actualizar Registro</string>
+    <string name="boton_menu_ciclo_consultar">Consultar Registro</string>
+    <string name="title_activity_menu_main">MenuMainActivity</string>
+
 </resources>

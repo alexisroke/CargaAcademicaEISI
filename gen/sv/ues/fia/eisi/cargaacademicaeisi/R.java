@@ -44,12 +44,16 @@ public final class R {
     }
     public static final class id {
         public static final int Button1=0x7f090002;
-        public static final int action_settings=0x7f090008;
-        public static final int imageButton1=0x7f090003;
-        public static final int imageButton2=0x7f090004;
-        public static final int imageButton3=0x7f090005;
-        public static final int imageButton4=0x7f090006;
-        public static final int imageButton5=0x7f090007;
+        public static final int action_settings=0x7f09000c;
+        public static final int button1=0x7f090005;
+        public static final int button2=0x7f090004;
+        public static final int button3=0x7f090003;
+        public static final int button4=0x7f090006;
+        public static final int imageButton1=0x7f090007;
+        public static final int imageButton2=0x7f090008;
+        public static final int imageButton3=0x7f090009;
+        public static final int imageButton4=0x7f09000a;
+        public static final int imageButton5=0x7f09000b;
         public static final int imageView1=0x7f090000;
         public static final int imageView2=0x7f090001;
     }
@@ -57,17 +61,23 @@ public final class R {
         public static final int activity_carga_academica=0x7f030000;
         public static final int activity_cargo=0x7f030001;
         public static final int activity_docente=0x7f030002;
-        public static final int activity_menu_principal=0x7f030003;
+        public static final int activity_menu_ciclo=0x7f030003;
+        public static final int activity_menu_principal=0x7f030004;
     }
     public static final class menu {
         public static final int carga_academica=0x7f080000;
         public static final int cargo=0x7f080001;
         public static final int docente=0x7f080002;
-        public static final int menu_principal=0x7f080003;
+        public static final int menu_ciclo=0x7f080003;
+        public static final int menu_principal=0x7f080004;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int boton_menu_ciclo_actualizar=0x7f060012;
+        public static final int boton_menu_ciclo_consultar=0x7f060013;
+        public static final int boton_menu_ciclo_eliminar=0x7f060011;
+        public static final int boton_menu_ciclo_insertar=0x7f060010;
         public static final int hello_world=0x7f060002;
         public static final int imagebutton_cargaacademica=0x7f060003;
         public static final int imagebutton_registromaterias=0x7f060004;
@@ -80,6 +90,8 @@ public final class R {
         public static final int texview_manuprincipal=0x7f060005;
         public static final int title_activity_cargo=0x7f06000c;
         public static final int title_activity_docente=0x7f06000d;
+        public static final int title_activity_menu_ciclo=0x7f06000f;
+        public static final int title_activity_menu_main=0x7f060014;
         public static final int title_activity_menu_principal=0x7f06000e;
     }
     public static final class style {

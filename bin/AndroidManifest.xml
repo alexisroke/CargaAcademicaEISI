@@ -34,6 +34,14 @@
             android:name="sv.ues.fia.eisi.cargaacademicaeisi.MenuPrincipalActivity"
             android:label="@string/title_activity_menu_principal" >
         </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.MenuCicloActivity"
+            android:label="@string/title_activity_menu_ciclo" >
+        </activity>
+        <activity
+            android:name="sv.ues.fia.eisi.cargaacademicaeisi.MenuMainActivity"
+            android:label="@string/title_activity_menu_main" >
+        </activity>
     </application>
 
 </manifest>
