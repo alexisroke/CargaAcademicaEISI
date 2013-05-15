@@ -67,22 +67,30 @@ public final class R {
         public static final int textView2=0x7f0a0005;
     }
     public static final class layout {
-        public static final int activity_carga_academica=0x7f030000;
-        public static final int activity_cargo=0x7f030001;
-        public static final int activity_ciclo_insertar=0x7f030002;
-        public static final int activity_docente=0x7f030003;
-        public static final int activity_menu_ciclo=0x7f030004;
-        public static final int activity_menu_gestion_carga_academica=0x7f030005;
-        public static final int activity_menu_principal=0x7f030006;
+        public static final int activity_area_materia=0x7f030000;
+        public static final int activity_carga_academica=0x7f030001;
+        public static final int activity_cargo=0x7f030002;
+        public static final int activity_ciclo_insertar=0x7f030003;
+        public static final int activity_departamento=0x7f030004;
+        public static final int activity_detalle_grupo_asignado=0x7f030005;
+        public static final int activity_docente=0x7f030006;
+        public static final int activity_materia=0x7f030007;
+        public static final int activity_menu_ciclo=0x7f030008;
+        public static final int activity_menu_gestion_carga_academica=0x7f030009;
+        public static final int activity_menu_principal=0x7f03000a;
     }
     public static final class menu {
-        public static final int carga_academica=0x7f090000;
-        public static final int cargo=0x7f090001;
-        public static final int ciclo_insertar=0x7f090002;
-        public static final int docente=0x7f090003;
-        public static final int menu_ciclo=0x7f090004;
-        public static final int menu_gestion_carga_academica=0x7f090005;
-        public static final int menu_principal=0x7f090006;
+        public static final int area_materia=0x7f090000;
+        public static final int carga_academica=0x7f090001;
+        public static final int cargo=0x7f090002;
+        public static final int ciclo_insertar=0x7f090003;
+        public static final int departamento=0x7f090004;
+        public static final int detalle_grupo_asignado=0x7f090005;
+        public static final int docente=0x7f090006;
+        public static final int materia=0x7f090007;
+        public static final int menu_ciclo=0x7f090008;
+        public static final int menu_gestion_carga_academica=0x7f090009;
+        public static final int menu_principal=0x7f09000a;
     }
     public static final class string {
         public static final int Menu_GestionCargaAcad_boton1_Ciclo=0x7f070016;
@@ -109,9 +117,13 @@ public final class R {
         public static final int textview_selecione_ciclo=0x7f07001e;
         public static final int textview_selecioneanio_ciclo=0x7f07001c;
         public static final int texview_manuprincipal=0x7f070005;
+        public static final int title_activity_area_materia=0x7f070020;
         public static final int title_activity_cargo=0x7f07000c;
         public static final int title_activity_ciclo_insertar=0x7f07001a;
+        public static final int title_activity_departamento=0x7f07001f;
+        public static final int title_activity_detalle_grupo_asignado=0x7f070022;
         public static final int title_activity_docente=0x7f07000d;
+        public static final int title_activity_materia=0x7f070021;
         public static final int title_activity_menu_ciclo=0x7f07000f;
         public static final int title_activity_menu_gestion_carga_academica=0x7f070015;
         public static final int title_activity_menu_main=0x7f070014;

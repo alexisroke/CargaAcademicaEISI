@@ -31,9 +31,13 @@
     <string name="Menu_GestionCargaAcad_boton3_DetalleMat">Tabla Detalle_Carga_Materia</string>
     <string name="Menu_GestionCargaAcad_boton4_DetalleActAcad">Tabla Detalle_Carga_Actividades_Academicas</string>
     <string name="title_activity_ciclo_insertar">Ingresar Resgistros Tabla Ciclo</string>
-     <string name="combobox_anio">Selecione Año del Ciclo</string>
-     <string name="textview_selecioneanio_ciclo">Selecione el año</string>
-     <string name="combobox_ciclo">Selecione el Ciclo</string>
-     <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
+    <string name="combobox_anio">Selecione Año del Ciclo</string>
+    <string name="textview_selecioneanio_ciclo">Selecione el año</string>
+    <string name="combobox_ciclo">Selecione el Ciclo</string>
+    <string name="textview_selecione_ciclo">Selecione el Ciclo</string>
+    <string name="title_activity_departamento">DepartamentoActivity</string>
+    <string name="title_activity_area_materia">AreaMateriaActivity</string>
+    <string name="title_activity_materia">MateriaActivity</string>
+    <string name="title_activity_detalle_grupo_asignado">DetalleGrupoAsignadoActivity</string>
 
 </resources>
