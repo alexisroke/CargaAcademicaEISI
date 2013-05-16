@@ -13,8 +13,8 @@ public class ControlBD {
 	// DECLARACION DE STRING con los campos de cada tabla de la BD
 	// a quien le toca cada tabala agreguele los campos necesarios entre las
 	// comillas
-	private static final String[] ACTIVIDAD_ACADEMICA = new String[] { "", "",
-			"", "" };
+	private static final String[] ACTIVIDAD_ACADEMICA = new String[] { "idactacad", "idmodalidad",
+			"nom_act_acad", "cargo" };
 
 	/** ASIGNACIONM ALEXIS */
 	private static final String[] CARGA_ACADEMICA = new String[] { "iddocente",
@@ -46,16 +46,18 @@ public class ControlBD {
 	private static final String[] DOCENTE_DPTO = new String[] { "", "", "", "",
 			"" };
 
-	private static final String[] LOCALES = new String[] { "", "", "", "", "" };
+	private static final String[] LOCALES = new String[] { "idlocal", "capacidad" };
 
 	private static final String[] MAT_AREA_PUEDE_IMPARTIR = new String[] { "",
 			"", "", "", "" };
-	private static final String[] MODALIDAD_ACT_ACAD = new String[] { "", "",
-			"", "", "" };
+	
+	private static final String[] MODALIDAD_ACT_ACAD = new String[] { "idmodalidad", "nom_modalidad",
+			"descuento_horas" };
 
-	private static final String[] MODALIDAD_CURSO = new String[] { "", "", "",
-			"", "" };
+	private static final String[] MODALIDAD_CURSO = new String[] { "idmodalidad", "nom_modalidad", "descuento_horas" };
+	
 	private static final String[] PERIODO = new String[] { "", "", "", "", "" };
+	
 	private static final String[] TIPO_CONTRATO = new String[] { "", "", "" };
 
 	private final Context context;
