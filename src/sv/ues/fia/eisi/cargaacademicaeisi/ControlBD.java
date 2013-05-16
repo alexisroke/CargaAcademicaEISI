@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class ControlBD {
 	// confirmacion de mario
@@ -18,8 +19,8 @@ public class ControlBD {
 	/** ASIGNACIONM ALEXIS */
 	private static final String[] CARGA_ACADEMICA = new String[] { "iddocente",
 			"anio", "numero" };
-	private static final String[] CICLO = new String[] { "anio", "numero",
-			"fechaini", "fechafin" };
+	private static final String[] CICLO = new String[] { "ANIO", "NUMERO",
+			"FECHAINI", "FECHAFIN" };
 	private static final String[] DETALLE_CARGA_MAT = new String[] {
 			"iddocente", "anio", "numero", "iddetallecurso" };
 	private static final String[] DETALLE_CARGA_ACT_ACAD = new String[] {
@@ -87,7 +88,7 @@ public class ControlBD {
 				db.execSQL("CREATE TABLE CARGA_ACADEMICA( iddocente VARCHAR(8) NOT NULL, anio VARCHAR(4) NOT NULL, numero VARCHAR(2) NOT NULL, PRIMARY KEY (iddocente,anio,numero) );");
 				db.execSQL("CREATE TABLE CARGO();");
 				/** alexis */
-				db.execSQL("CREATE TABLE CICLO ( anio VARCHAR(4) NOT NULL, numero VARCHAR(2) NOT NULL, fechaini DATE DEFAULT CURRENT_DATE NULL, fechafin DATE NULL, PRIMARY KEY (anio,numero) );");
+				db.execSQL("CREATE TABLE CICLO ( ANIO VARCHAR(4) NOT NULL, NUMERO VARCHAR(2) NOT NULL, FECHAINI DATE DEFAULT CURRENT_DATE NULL, FECHAFIN DATE NULL, PRIMARY KEY (ANIO,NUMERO) );");
 				db.execSQL("CREATE TABLE DEPARTAMENTO();");
 				/** alexis */
 				db.execSQL("CREATE TABLE DETALLE_CARGA_ACT_ACAD ( iddocente VARCHAR(8) NULL, anio VARCHAR(4) NULL, numero VARCHAR(2) NULL,idactacad VARCHAR(6) NULL );");
@@ -105,7 +106,7 @@ public class ControlBD {
 				db.execSQL("CREATE TABLE PERIODO();");
 				db.execSQL("CREATE TABLE TIPO_CONTRATO(); ");
 				/** TRIGGER alexis */
-				db.execSQL("CREATE TRIGGER fk_carga_ciclo BEFORE INSERT ON CARGA_ACADEMICA FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT ANIO FROM CICLO WHERE (ANIO = NEW.ANIO AND NUMERO = NEW.NUMERO)) IS NULL) THEN RAISE(ABORT, 'No existe el Ciclo') END; END;");
+				db.execSQL("CREATE TRIGGER fk_carga_ciclo BEFORE INSERT ON CARGA_ACADEMICA FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT anio FROM CICLO WHERE (anio = NEW.anio AND numero = NEW.numero)) IS NULL) THEN RAISE(ABORT, 'No existe el Ciclo') END; END;");
 				db.execSQL("CREATE TRIGGER fk_carga_docente BEFORE INSERT ON CARGA_ACADEMICA FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDDOCENTE FROM DOCENTE WHERE IDDOCENTE = NEW.IDDOCENTE) IS NULL) THEN RAISE(ABORT, 'No existe el Docente') END; END;");
 				db.execSQL("CREATE TRIGGER fk_detalle_carga_mat BEFORE INSERT ON DETALLE_CARGA_MAT FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDDOCENTE FROM CARGA_ACADEMICA WHERE IDDOCENTE = NEW.IDDOCENTE AND ANIO = NEW.ANIO AND NUMERO = NEW.NUMERO) IS NULL) THEN RAISE(ABORT, 'No existe esta informacion de Carga Academica') END; END;");
 				db.execSQL("CREATE TRIGGER fk_detalle_curso BEFORE INSERT ON DETALLE_CARGA_MAT FOR EACH ROW BEGIN SELECT CASE WHEN ((SELECT IDDETALLECURSO FROM DETALLE_GRUPO_ASIGNADO WHERE IDDETALLECURSO = NEW.IDDETALLECURSO) IS NULL) THEN RAISE(ABORT, 'No existe esta informacion de este Curso') END; END;");
@@ -136,16 +137,16 @@ public class ControlBD {
 	}
 
 	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION alexis */
-	public String insertar(CICLO ciclo) {
+	public String insertar1(CICLO ciclo) {
 		String regInsertados = "Registro Insertado Nº= ";
 		long contador = 0;
-
-		ContentValues cicl = new ContentValues();
-		cicl.put("anio", ciclo.getAnio());
-		cicl.put("numero", ciclo.getNumero());
-		cicl.put("fechaini", ciclo.getFechaini());
-		cicl.put("fechafin", ciclo.getFechafin());
-		contador = db.insert("ciclo", null, cicl);
+		ContentValues ciclo1 = new ContentValues();
+		ciclo1.put("ANIO", ciclo.getAnio());
+		ciclo1.put("NUMERO", ciclo.getNumero());
+		ciclo1.put("FECHAINI", ciclo.getFechaini());
+		ciclo1.put("FECHAFIN", ciclo.getFechafin());
+		
+		contador = db.insert("CICLO", null, ciclo1);
 
 		if (contador == -1 || contador == 0) {
 			regInsertados = "Error al Insertar el registro, Registro Duplicado. Verificar inserción";
@@ -155,6 +156,9 @@ public class ControlBD {
 		return regInsertados;
 	}
 
+	
+	
+	
 	/** TODO EL CODIGO DE CONTROL DE DCONTROLD DE BD ASIGNACION mario */
 	public String insertar(DEPARTAMENTO departamento) {
 		String regInsertados = "Registro insertado en la fila No.=";

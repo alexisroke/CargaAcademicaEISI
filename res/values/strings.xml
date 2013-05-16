@@ -50,5 +50,9 @@
     <string name="title_activity_administracion_catalogos">AdministracionCatalogosActivity</string>
     <string name="title_activity_admon_depto">AdmonDeptoActivity</string>
     <string name="title_activity_insertar_depto">InsertarDeptoActivity</string>
+    <string name="textview_fechaini">Fecha Inicio de Ciclo</string>
+    <string name="textview_fechafin">Fecha Fin de Ciclo</string>
+    <string name="button1_insertar_ciclo">Insertar</string>
+    <string name="button2_limpiartexto_ciclo">Limpiar Texto</string>
 
 </resources>
